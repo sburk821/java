@@ -18,9 +18,9 @@ title: Multiple Parson's Problems on One Page
 (function(){
   var initial = "int maximum = array[0];\n" +
     "for (int i = 0; i&lt;array.length) {\n" +
-    "if (array[i] &gt; maximum) {\n" +
-    "maximum = array[i];\n" +
-    "}\n" +
+    "  if (array[i] &gt; maximum) {\n" +
+    "    maximum = array[i];\n" +
+    "  }\n" +
     "}";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "maximum-sortable",
