@@ -6,14 +6,15 @@ Möchte man die ersten 100 (200, ...) Titel der aktuellen Charts ausgeben, wäre
 <div id="charts-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="charts-feedbackLink" value="Feedback bekommen" type="button" /> 
-    <input id="charts-newInstanceLink" value="Reset" type="button" /> 
+    <input id="charts-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="charts-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
   var initial = "for (int i = 0; i < charts.length; i++) {\n" +
     "	System.out.print(\"Platz \"+i+1+\": \");\n" +
-    "    System.out.print(charts[i]);\n" +
+    "	System.out.print(charts[i]);\n" +
+    "    System.out.println(\"\");\n" +
     "}";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "charts-sortable",
