@@ -1,7 +1,3 @@
----
-layout: default
-title: Lösungen für gänige Probleme rund um Arrays
----
 # Übungen zu Arrays
 ## Charts ausgeben ##
 Möchte man die ersten 100 (200, ...) Titel der aktuellen Charts ausgeben, wären entsprechend viele print-Anweisungen aus verschiedensten Gründen keine gute Lösung.
