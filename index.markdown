@@ -51,8 +51,8 @@ Wir nutzen die Top-Down-Methode, um uns schrittweise einer konkreten Lösung zu 
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "Wiederhole für alle Elemente zeile[i] einer Zeile\n" +
-    "	gib das Element zeile[i] aus";
+  var initial = "Wiederhole für alle Zeilen\n" +
+    "	gib alle Elemente der aktuellen Zeile aus";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sudoku1-sortable",
     "max_wrong_lines": 10,
@@ -70,6 +70,79 @@ Wir nutzen die Top-Down-Methode, um uns schrittweise einer konkreten Lösung zu 
       parsonsPuzzle.shuffleLines(); 
   }); 
   $("#sudoku1-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+### Variante 2 ###
+<div id="sudoku2-sortableTrash" class="sortable-code"></div> 
+<div id="sudoku2-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="sudoku2-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="sudoku2-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "Wiederhole für alle Zeilen i\n" +
+    "	Wiederhole für alle Elemente j\n" +
+    "    	gib Element an Stelle i, j aus";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "sudoku2-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#sudoku2-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#sudoku2-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+### Variante 3 ###
+<div id="sudoku3-sortableTrash" class="sortable-code"></div> 
+<div id="sudoku3-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="sudoku3-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="sudoku3-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "for (int i = 0; i<sudoku.length; i++) {\n" +
+    "	for (int j = 0;j<sudoku[0].length; j++ ) {\n" +
+    "		System.out.print(sudoku[i][j]+\" \");\n" +
+    "	}\n" +
+    "	System.out.println(\"\");\n" +
+    "}";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "sudoku3-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#sudoku3-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#sudoku3-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
