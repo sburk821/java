@@ -1,3 +1,4 @@
+---
 layout: default
 title: Lösungen für gänige Probleme rund um Arrays
 ---
