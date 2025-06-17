@@ -9,21 +9,6 @@ title: Lösungen für gänige Probleme rund um Arrays
 ## Charts ausgeben ##
 Möchte man die ersten 100 (200, ...) Titel der aktuellen Charts ausgeben, wären entsprechend viele print-Anweisungen aus verschiedensten Gründen keine gute Lösung.
 
-## Maximum ##
-<div id="maximum-sortableTrash" class="sortable-code"></div> 
-<div id="maximum-sortable" class="sortable-code"></div> 
-<div style="clear:both;"></div> 
-<p> 
-    <input id="maximum-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="maximum-newInstanceLink" value="Reset Problem" type="button" /> 
-</p> 
-<div id="charts-sortableTrash" class="sortable-code"></div> 
-<div id="charts-sortable" class="sortable-code"></div> 
-<div style="clear:both;"></div> 
-<p> 
-    <input id="charts-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="charts-newInstanceLink" value="Reset Problem" type="button" /> 
-</p> 
 <div id="charts-sortableTrash" class="sortable-code"></div> 
 <div id="charts-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
@@ -61,6 +46,5 @@ Möchte man die ersten 100 (200, ...) Titel der aktuellen Charts ausgeben, wäre
 </script>
 
 
-
-### Example Next Link
-[Next](./parsons/example1.html)
+# Example Next Link
+# [Next](./parsons/example1.html)
