@@ -14,7 +14,7 @@ Möchte man die ersten 100 (200, ...) Titel der aktuellen Charts ausgeben, wäre
   var initial = "for (int i = 0; i < charts.length; i++) {\n" +
     "	System.out.print(\"Platz \"+i+1+\": \");\n" +
     "	System.out.print(charts[i]);\n" +
-    "    System.out.println(\"\");\n" +
+    "	System.out.println(\"\");\n" +
     "}";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "charts-sortable",
