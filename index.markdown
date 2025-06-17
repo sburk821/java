@@ -1,7 +1,3 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 title: Lösungen für gänige Probleme rund um Arrays
 ---
@@ -13,8 +9,8 @@ Möchte man die ersten 100 (200, ...) Titel der aktuellen Charts ausgeben, wäre
 <div id="charts-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="charts-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="charts-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="charts-feedbackLink" value="Feedback bekommen" type="button" /> 
+    <input id="charts-newInstanceLink" value="Reset" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
@@ -44,7 +40,3 @@ Möchte man die ersten 100 (200, ...) Titel der aktuellen Charts ausgeben, wäre
   }); 
 })(); 
 </script>
-
-
-# Example Next Link
-# [Next](./parsons/example1.html)
